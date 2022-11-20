@@ -14,4 +14,5 @@ jobs:
       run: echo "Hola mundo, esta vaina funciona" 
     - name: Dime la fecha
       run: date
+    - run: ls -l
   
