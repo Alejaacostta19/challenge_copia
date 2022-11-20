@@ -1,0 +1,15 @@
+name: Test disponibilidad
+
+on:
+  push:
+    branches:
+    - master
+    - ramitaAle
+
+jobs:
+  saludo_inicial:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Echo a un mensaje
+      run: echo "Hola mundo, esta vaina funciona" 
+  
