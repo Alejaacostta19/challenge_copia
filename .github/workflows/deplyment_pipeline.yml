@@ -16,10 +16,7 @@ jobs:
       - uses: actions/checkout@v3
         with: 
           fetch-depth: 0
-      - uses: actions/setup-node@v2
-        with: 
-          node-version: '14'
-      - name: Install dependencies
-        run: npm install --no-audit --no-optional
-      - name: Lint
-        run: npm run eslint
+      - name: Run markdown lint
+        run: |
+          npm install remark-cli remark-preset-lint-consistent
+          npx remark . --use remark-preset-lint-consistent --frail
