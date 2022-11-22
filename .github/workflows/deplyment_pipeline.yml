@@ -20,7 +20,11 @@ jobs:
         run: |
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
-      - name: Build
-        run: npm run build
-      - name: Test
-        run: npm test
+          
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
+          # The directory to scan
+          arguments: --allow-missing-href
+          # The arguments to pass to HTMLProofer
