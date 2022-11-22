@@ -32,4 +32,7 @@ jobs:
           # The directory to scan
           arguments: --allow-missing-href
           # The arguments to pass to HTMLProofer
+          
+      - name: otra forma de checker html
+        uses: rundocs/checkout@master
 
