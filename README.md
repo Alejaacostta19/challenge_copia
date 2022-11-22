@@ -14,4 +14,4 @@
 - Repositorio de la imagen en Docker hub
 - Manifiesto de kubernetes
 - Documentacion del proceso (Parcial o completo)
-- Bonus track: URL de la aplicación
+- Bonus track: URL de la aplicación.
